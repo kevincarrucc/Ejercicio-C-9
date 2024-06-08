@@ -27,6 +27,7 @@ Partial Class Form1
         Me.Boton = New System.Windows.Forms.Button()
         Me.LblPromedio = New System.Windows.Forms.Label()
         Me.NumerosCargados = New System.Windows.Forms.ListBox()
+        Me.LblFin = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -60,11 +61,21 @@ Partial Class Form1
         Me.NumerosCargados.Size = New System.Drawing.Size(120, 368)
         Me.NumerosCargados.TabIndex = 4
         '
+        'LblFin
+        '
+        Me.LblFin.AutoSize = True
+        Me.LblFin.Location = New System.Drawing.Point(235, 353)
+        Me.LblFin.Name = "LblFin"
+        Me.LblFin.Size = New System.Drawing.Size(39, 13)
+        Me.LblFin.TabIndex = 5
+        Me.LblFin.Text = "Label1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.LblFin)
         Me.Controls.Add(Me.NumerosCargados)
         Me.Controls.Add(Me.LblPromedio)
         Me.Controls.Add(Me.Boton)
@@ -79,4 +90,5 @@ Partial Class Form1
     Friend WithEvents Boton As Button
     Friend WithEvents LblPromedio As Label
     Friend WithEvents NumerosCargados As ListBox
+    Friend WithEvents LblFin As Label
 End Class
